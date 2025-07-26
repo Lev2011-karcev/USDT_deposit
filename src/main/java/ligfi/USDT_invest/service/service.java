@@ -10,7 +10,7 @@ public class service {
     @Autowired
     private UsdtDepositRepository depositRepository;
     public void createDeposit(UsdtDeposit deposit){
-        deposit.setFinal_sum(deposit.getDeposit()*(deposit.getPercent()/100)*((float) deposit.getDaysPassed() /365));
+        deposit.setFinal_sum(deposit.getDeposit()*(deposit.getPercent()/100)*((float) deposit.getDaysPassed() /365)+deposit.getDeposit());
         depositRepository.save(deposit);
     }
 }
