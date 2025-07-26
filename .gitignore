@@ -1,0 +1,44 @@
+# Gradle
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+.settings/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.env
+application-dev.properties
+application-prod.properties
+
+# Spring Boot
+**/application-local*.properties
+**/application-*.yml (если есть секретные данные)
+
+# Dependency directories (не нужны, т.к. Gradle сам скачает)
+**/libs/
+**/jars/
+
+# Cache
+**/.cache/
+
+# Test reports
+**/test-results/
+**/reports/
